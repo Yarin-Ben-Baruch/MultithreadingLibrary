@@ -1,5 +1,6 @@
 package il.ac.hit.pooly.ThreadsPool;
 
+import il.ac.hit.pooly.FactoryTasks.PriorityType;
 import il.ac.hit.pooly.Task.Task;
 import org.junit.After;
 import org.junit.Before;
@@ -24,7 +25,7 @@ public class ThreadsPoolTest {
 
     @Test
     public void checkOrderPriority() {
-        threadPoolExecutor = new ThreadsPool(1);
+        threadPoolExecutor = new ThreadsPool(1, PriorityType.ascending);
 
         threadPoolExecutor.submit(new Task("T1", 1));
         threadPoolExecutor.submit(new Task("T7", 7));
@@ -37,7 +38,7 @@ public class ThreadsPoolTest {
 
     @Test
     public void checkOrderPriority2() {
-        threadPoolExecutor = new ThreadsPool(2);
+        threadPoolExecutor = new ThreadsPool(2,PriorityType.descending);
 
         threadPoolExecutor.submit(new Task("T100", 100));
         threadPoolExecutor.submit(new Task("T1", 7));
@@ -47,7 +48,7 @@ public class ThreadsPoolTest {
 
     @Test
     public void checkOrderPriority3() {
-        threadPoolExecutor = new ThreadsPool(5);
+        threadPoolExecutor = new ThreadsPool(5,PriorityType.ascending);
 
         threadPoolExecutor.submit(new Task("T100", 100));
         threadPoolExecutor.submit(new Task("T1", 7));
@@ -61,7 +62,7 @@ public class ThreadsPoolTest {
 
     @Test
     public void checkOrderPriority4() {
-        threadPoolExecutor = new ThreadsPool(3);
+        threadPoolExecutor = new ThreadsPool(3,PriorityType.descending);
 
         threadPoolExecutor.submit(new Task("T-1", -1));
         threadPoolExecutor.submit(new Task("T1", 7));
