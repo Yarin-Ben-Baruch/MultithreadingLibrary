@@ -1,10 +1,22 @@
 package il.ac.hit.pooly.FactoryTasks;
 
-public class PriorityDescTask<T> extends PriorityTask<T>{
+/**
+ * This class extends the abstract class PriorityTask.
+ * The extension is in the Comparison, this class order the tasks in ascending order.
+ *
+ * @param <T>
+ */
+public class PriorityDescTask<T> extends PriorityTask<T> {
 
+    /**
+     * This is basic ctor that called the super
+     *
+     * @param task
+     */
     public PriorityDescTask(Runnable task) {
         super(task);
     }
+
     /**
      * Sorting the priorities from the highest to the lowest.
      */

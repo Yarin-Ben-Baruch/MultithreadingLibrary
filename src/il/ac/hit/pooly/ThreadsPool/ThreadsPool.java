@@ -30,11 +30,12 @@ public class ThreadsPool extends ThreadPoolExecutor {
      */
     @Override
     protected <T> RunnableFuture<T> newTaskFor(Runnable runnable, T value) {
-        return FactoryPriorityTasks.createPriorityTask(typeOfPriority,runnable);
+        return FactoryPriorityTasks.createPriorityTask(typeOfPriority, runnable);
     }
 
     /**
      * Retains the priority type.
+     *
      * @param typeOfPriority Holds the types of priorities.
      */
     private void setTypeOfPriority(PriorityType typeOfPriority) {
