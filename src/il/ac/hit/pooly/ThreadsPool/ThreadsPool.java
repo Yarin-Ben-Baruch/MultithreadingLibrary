@@ -1,5 +1,9 @@
 package il.ac.hit.pooly.ThreadsPool;
-import java.util.concurrent.*;
+
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.RunnableFuture;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -9,6 +13,7 @@ public class ThreadsPool extends ThreadPoolExecutor {
 
     /**
      * Creates an executor, with priorities and size for management.
+     *
      * @param sizeOfThread The maximum size for management.
      */
     public ThreadsPool(int sizeOfThread) {
