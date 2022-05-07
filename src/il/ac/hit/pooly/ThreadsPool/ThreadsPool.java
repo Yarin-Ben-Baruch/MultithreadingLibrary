@@ -33,6 +33,10 @@ public class ThreadsPool extends ThreadPoolExecutor {
         return FactoryPriorityTasks.createPriorityTask(typeOfPriority,runnable);
     }
 
+    /**
+     * Retains the priority type.
+     * @param typeOfPriority Holds the types of priorities.
+     */
     private void setTypeOfPriority(PriorityType typeOfPriority) {
         this.typeOfPriority = typeOfPriority;
     }

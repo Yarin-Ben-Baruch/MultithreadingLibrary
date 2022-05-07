@@ -16,6 +16,9 @@ public abstract class PriorityTask<T> extends FutureTask<T> implements Comparabl
         this.task = (ITask) task;
     }
 
+    /**
+     * @return the received task.
+     */
     public ITask getTask() {
         return task;
     }
