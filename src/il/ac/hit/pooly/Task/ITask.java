@@ -8,7 +8,19 @@ package il.ac.hit.pooly.Task;
 public interface ITask extends Runnable{
     @Override
     default void run(){ perform();}
+    /**
+     * This method is implements the Interface method perform.
+     * The method perform is the operation that the user want to perform in the thread.
+     */
     void perform();
+    /**
+     * This is basic setter that set the priority to the priority that the user choose.
+     * @param level This variable is decided the priority of the thread.
+     */
     void setPriority(int level);
+    /**
+     * This is basic getter that return the priority of the thread.
+     * @return the priority of the thread.
+     */
     int getPriority();
 }
