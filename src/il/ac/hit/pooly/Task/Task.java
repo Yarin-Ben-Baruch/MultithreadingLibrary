@@ -1,7 +1,4 @@
 package il.ac.hit.pooly.Task;
-import il.ac.hit.pooly.ThreadsPoolException;
-
-import java.util.concurrent.*;
 
 /**
  * This class serves as an example and a default implementation for the interface ITask
@@ -12,9 +9,9 @@ public class Task implements ITask{
 
     /**
      * This ctor is the main ctor that all the ctor call him.
-     * In this ctor you can set the name and the priorty of the thread.
+     * In this ctor you can set the name and the priority of the thread.
      * @param name This variable is for the name of the running thread.
-     * @param priority This bariable is for priorty of the thread.
+     * @param priority This variable is for priority of the thread.
      */
     public Task(String name, int priority){
         setName(name);
