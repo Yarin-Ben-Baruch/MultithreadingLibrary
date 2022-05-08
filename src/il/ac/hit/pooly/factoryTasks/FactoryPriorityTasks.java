@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.FactoryTasks;
+package il.ac.hit.pooly.factoryTasks;
 
 public class FactoryPriorityTasks {
 

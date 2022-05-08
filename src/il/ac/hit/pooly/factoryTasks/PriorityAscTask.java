@@ -1,19 +1,18 @@
-package il.ac.hit.pooly.FactoryTasks;
+package il.ac.hit.pooly.factoryTasks;
 
 /**
  * This class extends the abstract class PriorityTask.
  * The extension is in the Comparison, this class order the tasks in ascending order.
- *
  * @param <T>
  */
-public class PriorityDescTask<T> extends PriorityTask<T> {
+public class PriorityAscTask<T> extends PriorityTask<T> {
 
     /**
      * This is basic ctor that called the super
      *
      * @param task
      */
-    public PriorityDescTask(Runnable task) {
+    public PriorityAscTask(Runnable task) {
         super(task);
     }
 
@@ -22,6 +21,6 @@ public class PriorityDescTask<T> extends PriorityTask<T> {
      */
     @Override
     public int compareTo(PriorityTask that) {
-        return Integer.compare(that.getTask().getPriority(), this.getTask().getPriority());
+        return Integer.compare(this.getTask().getPriority(),that.getTask().getPriority());
     }
 }

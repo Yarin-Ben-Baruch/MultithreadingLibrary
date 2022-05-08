@@ -1,7 +1,7 @@
-package il.ac.hit.pooly.ThreadsPool;
+package il.ac.hit.pooly.threadsPool;
 
-import il.ac.hit.pooly.FactoryTasks.PriorityType;
-import il.ac.hit.pooly.Task.Task;
+import il.ac.hit.pooly.factoryTasks.PriorityType;
+import il.ac.hit.pooly.task.Task;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,6 +20,7 @@ public class ThreadsPoolTest {
 
     @After
     public void tearDown() throws Exception {
+        threadPoolExecutor.shutdown();
         threadPoolExecutor = null;
     }
 

@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.Task;
+package il.ac.hit.pooly.task;
 
 /**
  * This class serves as an example and a default implementation for the interface ITask

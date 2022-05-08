@@ -1,6 +1,6 @@
-package il.ac.hit.pooly.FactoryTasks;
+package il.ac.hit.pooly.factoryTasks;
 
-import il.ac.hit.pooly.Task.ITask;
+import il.ac.hit.pooly.task.ITask;
 
 import java.util.concurrent.FutureTask;
 

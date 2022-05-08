@@ -1,7 +1,7 @@
-package il.ac.hit.pooly.ThreadsPool;
+package il.ac.hit.pooly.threadsPool;
 
-import il.ac.hit.pooly.FactoryTasks.FactoryPriorityTasks;
-import il.ac.hit.pooly.FactoryTasks.PriorityType;
+import il.ac.hit.pooly.factoryTasks.FactoryPriorityTasks;
+import il.ac.hit.pooly.factoryTasks.PriorityType;
 
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.RunnableFuture;

@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.Task;
+package il.ac.hit.pooly.task;
 
 /**
  * This interface use for running tasks.
