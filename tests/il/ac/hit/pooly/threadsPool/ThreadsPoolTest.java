@@ -1,6 +1,6 @@
 package il.ac.hit.pooly.threadsPool;
 
-import il.ac.hit.pooly.factoryTasks.PriorityType;
+import il.ac.hit.pooly.factorytasks.PriorityType;
 import il.ac.hit.pooly.task.Task;
 import org.junit.After;
 import org.junit.Before;

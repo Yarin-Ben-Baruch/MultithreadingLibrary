@@ -1,7 +1,7 @@
 package il.ac.hit.pooly.threadsPool;
 
-import il.ac.hit.pooly.factoryTasks.FactoryPriorityTasks;
-import il.ac.hit.pooly.factoryTasks.PriorityType;
+import il.ac.hit.pooly.factorytasks.FactoryPriorityTasks;
+import il.ac.hit.pooly.factorytasks.PriorityType;
 
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.RunnableFuture;
@@ -19,10 +19,21 @@ public class ThreadsPool extends ThreadPoolExecutor {
      * Creates an executor, with priorities and size for management.
      *
      * @param sizeOfThread The maximum size for management.
+     * @param typeOfPriority type of the sort thread
      */
     public ThreadsPool(int sizeOfThread, PriorityType typeOfPriority) {
-        super(1, sizeOfThread, 1000, TimeUnit.SECONDS, new PriorityBlockingQueue<>());
+        super(1, sizeOfThread, 1, TimeUnit.SECONDS, new PriorityBlockingQueue<>());
+
         setTypeOfPriority(typeOfPriority);
+    }
+
+    /**
+     * Creates an executor, with priorities and size for management.
+     * with the default descending sort.
+     * @param sizeOfThread The maximum size for management.
+     */
+    public ThreadsPool(int sizeOfThread){
+        this(sizeOfThread, PriorityType.descending);
     }
 
     /**

@@ -46,9 +46,9 @@ public class Task implements ITask {
     @Override
     public void perform() {
         try {
-            System.out.println(this.name + " triggered successfully");
+            System.out.println(this.name + " started");
             Thread.sleep(2000);
-            System.out.println(this.name + " completed successfully");
+            System.out.println(this.name + " ended");
         } catch (InterruptedException interruptedException) {
             Thread.currentThread().interrupt();
             throw new RuntimeException(interruptedException);

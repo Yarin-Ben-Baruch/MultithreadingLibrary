@@ -1,5 +1,10 @@
-package il.ac.hit.pooly.factoryTasks;
+package il.ac.hit.pooly.factorytasks;
 
+/**
+ * This class represents an option manufacturing plant of our priority types.
+ * So if you want to add a different sort form, we'll just have to build a new class
+ * and add its name to the sort options(enum), without changing the rest of the code.
+ */
 public class FactoryPriorityTasks {
 
     /**

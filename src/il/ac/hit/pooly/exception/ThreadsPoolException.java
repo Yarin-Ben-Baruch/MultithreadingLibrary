@@ -1,4 +1,4 @@
-package il.ac.hit.pooly;
+package il.ac.hit.pooly.exception;
 
 /**
  * Errors Department, which handles errors related to priority management.

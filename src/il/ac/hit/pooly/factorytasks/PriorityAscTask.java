@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.factoryTasks;
+package il.ac.hit.pooly.factorytasks;
 
 /**
  * This class extends the abstract class PriorityTask.

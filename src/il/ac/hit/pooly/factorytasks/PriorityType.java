@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.factoryTasks;
+package il.ac.hit.pooly.factorytasks;
 
 /**
  * Types of priority sorting options.

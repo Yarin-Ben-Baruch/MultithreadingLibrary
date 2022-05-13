@@ -1,4 +1,4 @@
-package il.ac.hit.pooly.factoryTasks;
+package il.ac.hit.pooly.factorytasks;
 
 import il.ac.hit.pooly.task.ITask;
 
