@@ -6,7 +6,7 @@ import il.ac.hit.pooly.threadsPool.ThreadsPool;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
-public class Test {
+public class Program {
     public static void main(String[] args) {
         ThreadPoolExecutor threadPoolExecutor;
 

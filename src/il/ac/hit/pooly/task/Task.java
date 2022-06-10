@@ -6,6 +6,10 @@ package il.ac.hit.pooly.task;
  * The interface includes set and get priority to allow the user to get and set the variable.
  */
 public interface Task extends Runnable{
+
+    /**
+     * This method execute the preform action, because the interface extends from Runnable.
+     */
     @Override
     default void run(){ perform();}
     /**
